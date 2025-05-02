@@ -1,8 +1,9 @@
-import random
+from random import choice as k
 
 for i in range(5):
     coin = ["bridge", "lily", "bottle", "can", "tuki"]
 
-    output = random.choice(coin)
+    output = k(coin)
 
     print(output)
+
