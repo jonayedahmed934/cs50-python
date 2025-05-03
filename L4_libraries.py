@@ -1,9 +1,6 @@
-from random import choice as k
+import sys
+import requests
 
-for i in range(5):
-    coin = ["bridge", "lily", "bottle", "can", "tuki"]
+resposnse = requests.get("https://www.youtube.com/watch?v=MztLZWibctI&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index="+sys.argv[1])
 
-    output = k(coin)
-
-    print(output)
-
+print(resposnse.json())
